@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header >
+        <img src="procBanner.png" alt="innovativeProcurementLogo" id="headerLogo">
+    </header>
+
+    <!-- Intro section with button that leads to form-->
+    <section id = "intro">
+        <h2>Revolutionising Procurement in  Technology Healthcare</h2>
+        <p>We streamline procurement processes for the technology healthcare sector, leveraging cutting-edge technologies for efficient and cost-effective solutions.</p>
+        
+        <a href="#" class="to-form">
+        <button class="funnelButton" id="toFormButton">Get In Touch Now !</button>
+        </a>
+    </section>
+
+    <!-- Testimonial section that has list of companies worked with-->
+    <section id = "testimonials">
+        <h2>Organizations We've Collaborated With</h2>
+        <ul class="organizations-list">
+            <li>NHS </li>
+            <li class="separator">|</li>
+            <li>TFL </li>
+            <li class="separator">|</li>
+            <li>Defra </li>
+            <li class="separator">|</li>
+            <li>MoJ</li>
+        </ul>
+        <p>We are proud to have partnered with esteemed organizations such as the NHS to deliver top-tier procurement services. </p>
+    </section>
+
+    <!-- About us section that contains infomation about procurement specialist-->
+    <section id = "aboutUs">
+        <h2>About Our Procurement Specialist</h2>
+        <div id="infoContainer">
+        <img src="steven_nov.png" alt="stevenNovetsky" >
+        <p >Steve Novetsky is an accomplished procurement expert with 25 years of experience. Known for his commercial acumen and focus on high-quality outcomes, he excels in UK Procurement and OJEU fields. Steve leads with an agile, customer-focused approach and lean sourcing strategies, ensuring top-notch results for our clients.</p>
+        </div>
+    </section>
+
+    <!-- Form section that has email,phonenum,fname,sname,cname as inputs with submit button-->
+    <section id = "formSection">
+        <h2>Transform Your Procurement Process Today</h2>
+        <form action="https://sheetdb.io/api/v1/wr6ze6j2w63jj" method="POST" id = "contactForm" >
+            <p id="successSubmission"></p>
+
+            <input class="formInputBoxes" type="email" name="data[email]" placeholder="Work Email"> <br>
+            <p class="errorMessage" id="emailError"></p>
+
+            <input class="formInputBoxes" type="text" name="data[phoneNum (+44)]" placeholder="Phone Number" maxlength="13" title="Phone Number Must Be At Least 10 Digits"><br>
+            <p class="errorMessage" id="phoneError"></p>
+
+            <input class="formInputBoxes" type="text" name="data[fName]" placeholder="First Name"><br>
+            <p class="errorMessage" id="fNameError"></p>
+
+            <input class="formInputBoxes" type="text" name="data[sName]" placeholder="Last Name" title="Please Enter Your Last Name"><br>
+            <p class="errorMessage" id="sNameError"></p>
+
+            <input class="formInputBoxes" type="text" name="data[cName]" placeholder="Company Name" title="Please Enter Your Company Name"> <br>
+            <p class="errorMessage" id="cNameError"></p>
+
+            <div class="g-recaptcha" data-sitekey="6LePrw4qAAAAAJJJ1VtNQl8tUpx4E0MfHnv7vPKW"></div> <br>
+            
+            <button class="funnelButton" id="formButton" type="submit">Get In Touch Now !</button>  
+        </form>
+
+    </section>
+
+    
+    
+    <footer>
+    </footer>
+
+    <script src="main.js" ></script>
+</body>
+</html>
