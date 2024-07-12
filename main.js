@@ -83,6 +83,10 @@ $(document).ready(function(){
         }
         // otherwise submit data to google sheet and send user to thank you page
         else{
+            //disable form button to prevent multiple submissions
+            const formButton = $("#formButton");
+            formButton.prop('disabled', true);
+
             fetch(form.attr('action'), {
                 method : "POST",
                 body: new FormData(form[0]),
@@ -93,6 +97,8 @@ $(document).ready(function(){
                 window.location.href = 'success.html';
             }).catch((error) => {
                 console.error('Error:', error);
+                //re enable submit button if there is an error
+                formButton.prop('disabled', false);
             });
         }
 

@@ -7,7 +7,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0; /* Ensure there is no margin around the body */
+    margin: 0; 
 }
 
 html {
@@ -89,27 +89,43 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
-    text-align: center; /* Center content text */
+    justify-content: center; 
+    text-align: left; 
 }
 
 #infoContainer img {
     max-width: 100%;
     height: auto;
-    margin-right: 20px;
-    margin-bottom: 20px; /* Added margin-bottom for spacing */
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    padding-left: 10%;
+    border-radius: 12px;
 }
 
 #infoContainer p {
     flex: 1;
     margin: 0;
     width: 100%;
-    padding-left: 10px;
+    padding-right: 14%;
+    padding-left: 50px;
     box-sizing: border-box;
+    text-align: left;
 }
 
-#aboutUs img {
-    border-radius: 12px;
+@media (max-width: 1200px) {
+    #infoContainer p {
+        padding-right: 10%;
+        padding-left: 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #infoContainer p {
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -120,11 +136,15 @@ section {
 
     #infoContainer img {
         margin-right: 0;
+        padding-left: 0;
     }
 
     #infoContainer p {
-        width: 100%;
+        width: 90%;
         padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        font-size: 1.4em; 
     }
 
     .organizations-list li {
@@ -136,7 +156,8 @@ section {
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.4em;
+        width: 90%;
     }
 
     .funnelButton {
@@ -168,7 +189,7 @@ section {
     width: 100%;
     max-width: 613px;
     height: 51px;
-    margin: 8px 0;
+    margin: 4px 0; 
     background-color: #6B6E70;
     border: 0;
     border-radius: 12px;
@@ -191,16 +212,15 @@ section {
     color: red;
     margin-top: 5px;
     font-size: 0.9em;
-    text-align: left;
-    margin-left: 110px;
+    text-align: center; 
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .g-recaptcha {
     display: flex;
-    justify-content: center; /* Center the reCAPTCHA */
-    margin: 0 auto; /* Center the reCAPTCHA */
+    justify-content: center; 
+    margin: 0 auto; 
 }
 
 #successSubmission {
@@ -209,8 +229,7 @@ section {
     font-size: 0.9em;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-left: 200px;
+    text-align: center; 
 }
 
 #successHeader {
@@ -220,7 +239,7 @@ section {
 #successSection {
     text-align: center;
     padding: 20px;
-    margin-top: 20px;  /* Reduce the margin */
+    margin-top: 20px;  
 }
 
 #successSection h1 {
