@@ -21,6 +21,7 @@ $(document).ready(function(){
         const nameRegex = /^[a-zA-Z]+$/;
         const phoneRegex = /^\+?\d+$/;
         const form = $('#contactForm');
+        const captchaResponse = grecaptcha.getResponse();
 
         //validate email
         let inputEmail = $('[name = "data[email]"]').val();
@@ -68,6 +69,13 @@ $(document).ready(function(){
             $('#cNameError').html("Please Enter Your Company Name");
             isValid = false;
         }
+
+        //ensure that the captcha box has been ticked
+        if (!captchaResponse.length > 0 ){
+            $('#captchaError').html("Please Tick The reCAPTCHA Box");
+            isValid = false;
+        }
+
 
         //if from invalid prevent submission
         if(!isValid){
