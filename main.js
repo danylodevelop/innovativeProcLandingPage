@@ -9,6 +9,10 @@ $(document).ready(function(){
         },100);
     });
 
+    function returnToHomePage(){
+        window.location.href = 'index.html';
+    }
+
 
 
     //form submission
@@ -104,8 +108,7 @@ $(document).ready(function(){
 
     });
 
-    $('#headerLogo').click(function(){
-        window.location.href = 'index.html';
-    });
+    $('#headerLogo').click(returnToHomePage);
+    $('#returnBtn').click(returnToHomePage);
 
 });

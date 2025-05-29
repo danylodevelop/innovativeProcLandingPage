@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovative Procurement</title>
     <link rel="stylesheet" href="main.css">
-    <script src="jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -16,37 +15,19 @@
 <body>
     
     <header >
-        <img src="procBanner.png" alt="innovativeProcurementLogo" id="headerLogo">
+        <img src="newProcBanner.png" alt="innovativeProcurementLogo" id="headerLogo">
     </header>
 
     <!-- Intro section with button that leads to form-->
     <section id = "intro">
         <h2>Revolutionising Procurement in  Technology Healthcare</h2>
-        <p> <b>Better Procurement Processes Leading to Value Add Contracts Resulting in Enhanced Outcomes </b></p>
+        <p> Better Procurement Processes Leading to Value Add Contracts Resulting in Enhanced Outcomes </p>
         
         <a href="#" class="to-form">
         <button class="funnelButton" id="toFormButton">Get In Touch Now !</button>
         </a>
     </section>
 
-    <!-- Testimonial section that has list of companies worked with-->
-    <!--
-    <section id = "testimonials">
-        <h2>Organizations We've Collaborated With</h2>
-        <ul class="organizations-list">
-            <li>NHS </li>
-            <li class="separator">|</li>
-            <li>TFL </li>
-            <li class="separator">|</li>
-            <li>Defra </li>
-            <li class="separator">|</li>
-            <li>MoJ</li>
-        </ul>
-        <p>We are proud to have partnered with esteemed organizations such as the NHS to deliver top-tier procurement services. </p>
-    </section>
-    -->
-
-    <!-- About us section that contains infomation about procurement specialist-->
     <section id = "aboutUs">
         <h2>About Our Procurement Specialist</h2>
         <div id="infoContainer">
@@ -79,7 +60,7 @@
             <div class="g-recaptcha" data-sitekey="6LePrw4qAAAAAJJJ1VtNQl8tUpx4E0MfHnv7vPKW"></div> <br>
             <p class="errorMessage" id="captchaError"></p>
 
-            <button class="funnelButton" id="formButton" type="submit">Get In Touch Now !</button>  
+            <button class="funnelButton" id="formButton" type="submit">Submit <i class="fa-solid fa-circle-check"></i></button>  
         </form>
 
     </section>
